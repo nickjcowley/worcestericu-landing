@@ -149,6 +149,7 @@
 
   @media (max-width: 500px) {
     .cards { grid-template-columns: 1fr; }
+    .card--wide { grid-column: auto; }
   }
 
   .card {
@@ -189,6 +190,8 @@
     background: linear-gradient(180deg, var(--accent-dim) 0%, transparent 100%);
     pointer-events: none;
   }
+
+  .card--wide { grid-column: 1 / -1; }
 
   .card--secondary {
     border-top: 3px solid var(--border);
@@ -358,6 +361,29 @@
       </p>
       <span class="card-cta">
         Browse archive
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+          <path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+    </a>
+
+    <!-- Tool: Pre-op List Prep (worcestericu.com/preop) -->
+    <a href="/preop/" class="card card--secondary card--wide">
+      <svg class="card-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="36" height="36" rx="8" fill="var(--accent)" opacity="0.12"/>
+        <!-- Clipboard / list icon -->
+        <rect x="10" y="8" width="16" height="21" rx="2" stroke="var(--accent)" stroke-width="1.8" fill="none"/>
+        <path d="M14 14h8M14 18.5h8M14 23h5" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+      <div>
+        <p class="card-label">Anaesthetic tool · worcestericu.com/preop</p>
+        <h2 class="card-title">Pre-op List Prep</h2>
+      </div>
+      <p class="card-desc">
+        Turn tomorrow's Bluespier theatre list into an anaesthetic pre-op sheet. Runs in your browser; nothing is uploaded.
+      </p>
+      <span class="card-cta">
+        Open Pre-op List Prep
         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
           <path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
