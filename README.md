@@ -33,7 +33,7 @@ In your domain registrar (wherever you bought worcestericu.com), update the DNS:
 | A     | @    | 185.199.111.153        |
 | CNAME | www  | YOUR-GITHUB-USERNAME.github.io |
 
-DNS changes take up to 24 hours to propagate.
+DNS changes take up to 24 hours to propagate
 
 ### 5. Enable HTTPS
 Once the domain is verified in Settings → Pages, tick **Enforce HTTPS**.
